@@ -1,6 +1,7 @@
 import pytest
 from simple_dice_game import roll
 
+
 def test_roll_no_double_ones_or_sixes(): # Ensures that the function never returns [1, 1] or [6, 6].
     for _ in range(1000):
         result = roll()
